@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  border: 3px solid blue;
+  padding: 10px;
+  width: 400px; 
+  height: auto;
+
+}
+body{
+  background: url('fond.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .App-logo {
@@ -34,5 +43,45 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px; 
+}
+h3 {
+  color: green;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif
+}
+button {
+  background-color: #4caf50; 
+  color: white;
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin :15px;
+  font-weight: bold;
+  font-size: 16px;
+  animation: changeColor 2s linear infinite;
+}
+
+button:hover {
+  background-color: #45a049; 
+}
+
+@keyframes changeColor {
+
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-color: blue; 
+  }
+  100% {
+    background-color: green;
   }
 }
